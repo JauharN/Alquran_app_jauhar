@@ -1,0 +1,2 @@
+C:/Users/ArdNic/FlutterProjects/flutter_alquran_jauhar_app/android/app/.cxx/Debug/47a1o4d1/arm64-v8a/CMakeFiles/edit_cache.dir
+C:/Users/ArdNic/FlutterProjects/flutter_alquran_jauhar_app/android/app/.cxx/Debug/47a1o4d1/arm64-v8a/CMakeFiles/rebuild_cache.dir
