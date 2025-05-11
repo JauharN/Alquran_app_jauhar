@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
 
 class AppColors {
-  /// primary = #3949AB
-  static const Color primary = Color.fromARGB(255, 1, 66, 65);
+  /// primary = Golden Yellow (Qin Dynasty theme)
+  static const Color primary = Color(0xFFE6B325); // Kuning emas kerajaan
 
-  /// secondary = #F9A825
-  static const Color secondary = Color.fromARGB(255, 4, 195, 115);
+  /// secondary = Dragon Blue (Qin Dynasty theme)
+  static const Color secondary = Color(0xFF1E3A8A); // Biru naga
 
-  /// grey = #B7B7B7
-  static const Color grey = Color(0xffB7B7B7);
+  /// grey = #B7B7B7 (sedikit lebih gelap untuk kontras dengan kuning)
+  static const Color grey = Color(0xffA0A0A0);
 
-  /// light = #F8F5FF
-  static const Color light = Color(0xffF8F5FF);
+  /// light = #F8F5FF (diubah ke cream untuk tema Qin)
+  static const Color light = Color(0xffFFF8E1);
 
-  /// light = #C7D0EB
-  static const Color blueLight = Color(0xffC7D0EB);
+  /// light = #C7D0EB (diubah ke biru muda untuk tema Qin)
+  static const Color blueLight = Color(0xff93C5FD);
 
   /// black = #000000
   static const Color black = Color(0xff000000);
@@ -22,18 +22,23 @@ class AppColors {
   /// white = #FFFFFF
   static const Color white = Color(0xffFFFFFF);
 
-  /// green = #50C474
+  /// green = #50C474 (dipertahankan untuk konsistensi UI)
   static const Color green = Color(0xff50C474);
 
-  /// red = #F4261A
-  static const Color red = Color(0xffF4261A);
+  /// red = #F4261A (diubah ke merah naga)
+  static const Color red = Color(0xFFC51605);
 
-  /// card = #E5E5E5
-  static const Color card = Color(0xffE5E5E5);
+  /// card = #E5E5E5 (diubah ke cream muda untuk tema Qin)
+  static const Color card = Color(0xffFFF8DC);
 
-  /// disabled = #C8D1E1
-  static const Color disabled = Color(0xffC8D1E1);
+  /// disabled = #C8D1E1 (diubah untuk lebih cocok dengan tema)
+  static const Color disabled = Color(0xffD1D5DB);
 
-  /// subtitle = #7890CD
-  static const Color subtitle = Color(0xff7890CD);
+  /// subtitle = #7890CD (diubah ke biru yang lebih gelap)
+  static const Color subtitle = Color(0xff3B82F6);
+
+  /// tambahan warna tema Chinese
+  static const Color accent = Color(0xFFC51605); // Merah naga untuk highlight
+  static const Color background =
+      Color(0xFF0F172A); // Background gelap untuk contrast
 }

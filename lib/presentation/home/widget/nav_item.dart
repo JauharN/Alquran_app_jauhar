@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_alquran_jauhar_app/core/constants/colors.dart';
-
+import '../../../core/constants/colors.dart';
+import '../../../core/themes/text_styles.dart';
 import '../../../core/components/spaces.dart';
 
 class NavItem extends StatelessWidget {
-  final String iconPath;
+  final IconData icon;
   final String label;
   final bool isActive;
   final VoidCallback onTap;
@@ -12,7 +12,7 @@ class NavItem extends StatelessWidget {
 
   const NavItem({
     super.key,
-    required this.iconPath,
+    required this.icon,
     required this.label,
     required this.isActive,
     required this.onTap,
@@ -32,18 +32,13 @@ class NavItem extends StatelessWidget {
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  SizedBox(
-                    width: 25.0,
-                    height: 25.0,
-                    child: Image.asset(
-                      iconPath,
-                      color: isActive ? AppColors.white : AppColors.disabled,
-                      // colorFilter: ColorFilter.mode(
-                      //   isActive ? AppColors.white : AppColors.disabled,
-                      //   BlendMode.srcIn,
-                      // ),
-                    ),
-                  )
+                  Icon(
+                    icon,
+                    color: isActive
+                        ? AppColors.secondary
+                        : AppColors.white.withValues(alpha: 150.0),
+                    size: 24,
+                  ),
                 ],
               ),
             ),
@@ -53,27 +48,33 @@ class NavItem extends StatelessWidget {
             borderRadius: const BorderRadius.all(
               Radius.circular(16.0),
             ),
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                SizedBox(
-                  width: 32.0,
-                  height: 32.0,
-                  child: Image.asset(
-                    iconPath,
+            child: Container(
+              padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+              decoration: BoxDecoration(
+                color: isActive
+                    ? AppColors.secondary.withValues(alpha: 50.0)
+                    : Colors.transparent,
+                borderRadius: BorderRadius.circular(12),
+              ),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Icon(
+                    icon,
                     color: isActive ? AppColors.secondary : AppColors.white,
+                    size: 24,
                   ),
-                ),
-                const SpaceHeight(4.0),
-                Text(
-                  label,
-                  style: TextStyle(
-                    fontSize: 14,
-                    fontWeight: FontWeight.w400,
-                    color: isActive ? AppColors.secondary : AppColors.white,
+                  const SpaceHeight(4.0),
+                  Text(
+                    label,
+                    style: AppTextStyles.bodySmall.copyWith(
+                      color: isActive ? AppColors.secondary : AppColors.white,
+                      fontWeight:
+                          isActive ? FontWeight.bold : FontWeight.normal,
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           );
   }

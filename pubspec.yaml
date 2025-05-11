@@ -31,17 +31,28 @@ dependencies:
   adhan: ^2.0.0+1
   alarm: ^5.0.3
   cupertino_icons: ^1.0.8
+  equatable: ^2.0.7
   flutter:
     sdk: flutter
+  flutter_background_service: ^5.1.0
+  flutter_background_service_android: ^6.3.0
+  flutter_bloc: ^9.1.1
+  flutter_compass: ^0.8.1
+  flutter_local_notifications: ^19.1.0
+  flutter_svg: ^2.1.0
   geocoding: ^3.0.0
   geolocator: ^13.0.2
+  google_fonts: ^6.2.1
   hijriyah_indonesia: ^0.1.5
+  home_widget: ^0.7.0+1
   intl: ^0.20.2
   location: ^8.0.0
   permission_handler: ^11.4.0
   quran_flutter: ^1.0.3
   scrollable_positioned_list: ^0.3.8
+  share_plus: ^11.0.0
   shared_preferences: ^2.5.2
+  timezone: ^0.10.1
 
 dev_dependencies:
   flutter_lints: ^4.0.0
